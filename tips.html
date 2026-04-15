@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LODA Uniformes | Tips y Consejos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">LODA <span>Uniformes</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Inicio & Nosotros</a></li>
+    <li><a href="servicios.html">Uniformes & Servicios</a></li>
+    <li><a href="tips.html" class="active">Tips para Mamás</a></li>
+  </ul>
+  <div id="admin-badge" onclick="openAdminGate()">⚙ Admin</div>
+  <div class="burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="section-inner text-center">
+    <div class="section-tag">El Rincón de Mamá</div>
+    <h1 class="section-title" id="page-title-display">Tips y Consejos Útiles</h1>
+    <p class="section-lead mx-auto" id="page-sub-display">Sabemos que ser mamá es un trabajo de tiempo completo. Aquí te dejamos algunos datos interesantes y trucos para cuidar la ropa de tus peques.</p>
+    
+    <div class="page-image-container" style="margin-top: 30px;">
+      <img id="page-image-display" src="" alt="Imagen de tips" style="display: none; max-width: 100%; border-radius: 20px;" />
+      <p id="page-caption-display" class="image-caption" style="display: none;"></p>
+    </div>
+  </div>
+</section>
+
+<section id="tips" class="bg-light" style="padding-top: 40px;">
+  <div class="section-inner">
+    <div class="tips-grid" id="tips-container">
+      </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">LODA <span>Uniformes</span></div>
+    <nav class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="tips.html">Tips</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">© 2026 LODA Uniformes · Pensando en tu familia</div>
+</footer>
+
+<div id="toast"></div>
+<div id="admin-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
